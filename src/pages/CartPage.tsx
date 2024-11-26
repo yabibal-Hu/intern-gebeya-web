@@ -12,8 +12,7 @@ import { useRef, useState } from "react";
 const CartPage = () => {
   const navigate = useNavigate();
   const Items: Item[] = data.items;
-  const { cartItems, addItem, removeItem } = useCart();
-  console.log("cartItems", cartItems);
+  const { cartItems, addItem, minusQuantity } = useCart();
   const cartItem = Items.filter((item) => cartItems[item.id]);
   const [activeIndex, setActiveIndex] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -35,6 +34,10 @@ const CartPage = () => {
     });
     setActiveIndex(index);
   };
+
+  if (cartItem.length === 0) {
+    return  <div className=" text-center text-2xl text-[#FEA301] m-20">No items in cart</div>;
+  }
   // const item = Items.find((e) => e.id === parseInt(id || ""));
   return (
     <div className="min-h-screen  max-w-[1584px] mx-auto px-6 md:p-6 lg:p-20">
@@ -97,12 +100,12 @@ const CartPage = () => {
                   <p className="text-sm">Quantity:</p>
                   <div className="flex items-center border rounded-lg ">
                     <button
-                      onClick={() => removeItem(item.id)}
+                      onClick={() => minusQuantity(item.id)}
                       className="bg-[#FEA301] rounded-l-lg px-2 py-1 text-lg text-white"
                     >
                       -
                     </button>
-                    <span className="px-4">{cartItems[item.id] || 0}</span>
+                    <span className="w-8 text-center">{cartItems[item.id] || 0}</span>
                     <button
                       onClick={() => addItem(item.id)}
                       className="bg-[#FEA301] rounded-r-lg px-2 py-1 text-lg text-white"

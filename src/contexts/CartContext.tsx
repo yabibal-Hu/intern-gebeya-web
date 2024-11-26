@@ -5,6 +5,7 @@ interface CartContextProps {
   cartItems: { [key: number]: number };
   addItem: (productId: number) => void;
   removeItem: (productId: number) => void;
+  minusQuantity: (productId: number) => void;
   clearCart: () => void; // Remove 'productId' argument here
 }
 
@@ -29,27 +30,37 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     }));
   };
 
-  // Function to remove one quantity of an item
-  const removeItem = (productId: number) => {
+  //Function to remove one quantity of an item
+  const minusQuantity = (productId: number) => {
     setCartItems((prevCart) => {
       const updatedCart = { ...prevCart };
-
       if (updatedCart[productId] > 1) {
         updatedCart[productId] -= 1; // Reduce quantity by 1
       } else {
         delete updatedCart[productId]; // Remove product entirely if the quantity is 0
       }
-
       return updatedCart;
     });
   };
 
+  // Function to remove one quantity of an item
+  // Function to remove the entire item, regardless of quantity
+  const removeItem = (productId: number) => {
+    setCartItems((prevCart) => {
+      const updatedCart = { ...prevCart };
+      delete updatedCart[productId]; // Remove the item by its ID
+      return updatedCart;
+    });
+  };
+  // Function to clear the cart
   const clearCart = () => {
     setCartItems({});
   };
 
   return (
-    <CartContext.Provider value={{ cartItems, addItem, removeItem, clearCart }}>
+    <CartContext.Provider
+      value={{ cartItems, addItem, removeItem, clearCart, minusQuantity }}
+    >
       {children}
     </CartContext.Provider>
   );
