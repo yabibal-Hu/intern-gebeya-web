@@ -1,13 +1,14 @@
-import data from "../../assets/data.json";
+import data from "../../../public/../public/assets/data.json";
 import { Item } from "../../types";
-import heart from "../../assets/icon/gridicons_heart-outline.png";
-import star from "../../assets/icon/star1.png";
+import heart from "../../../public/assets/icon/gridicons_heart-outline.png";
+import star from "../../../public/assets/icon/star1.png";
+import {useCart} from "../../contexts/CartContext"
 import { Link } from "react-router-dom";
 import { useRef, useState } from "react";
 
 export default function Items() {
   const Items: Item[] = data.items;
-
+const { addItem } = useCart();
   const [activeIndex, setActiveIndex] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -80,16 +81,19 @@ export default function Items() {
                       </p>
                       <span className="flex justify-between items-center pt-3">
                         <p className="text-xl font-bold">${item.price}</p>
-                        <Link to={`/cart/${item.id}`} className="lg:w-[150px] lg:h-[74px ] text-white bg-[#FEA301] p-3  rounded-[16px]">
+                        <button
+                          onClick={() => addItem(item.id)}
+                          className="lg:w-[150px] lg:h-[74px ] text-white bg-[#FEA301] p-3  rounded-[16px]"
+                        >
                           Add to Cart
-                        </Link>
+                        </button>
                       </span>
                     </div>
                   </div>
                 ))}
               </div>
               {/* Indicators */}
-              <div className="flex lg:hidden justify-center mt-4 gap-2">
+              <div className="flex justify-center mt-4 gap-2">
                 {Items.map((_, index) => (
                   <button
                     key={index}
@@ -102,23 +106,23 @@ export default function Items() {
               </div>
             </div>
           </section>
-          <div className="flex justify-center gap-4 justify-between pt-28 w-full overflow-x-auto">
-            <button className="border rounded-full lg:w-52 text-base lg:h-16 min-w-20 h-10 ">
+          <div className="flex justify-between gap-4 pt-28 w-full overflow-x-auto scrollbar-hide">
+            <button className="border rounded-full lg:w-52 text-sm lg:text-base lg:h-16 min-w-[100px] h-10">
               Men
             </button>
-            <button className="border rounded-full lg:w-52 text-base lg:h-16 min-w-20 h-10  bg-[#FEA301] text-white">
+            <button className="border rounded-full lg:w-52 text-sm lg:text-base lg:h-16 min-w-[100px] h-10 bg-[#FEA301] text-white">
               Women
             </button>
-            <button className="border rounded-full lg:w-52 text-base lg:h-16 min-w-20 h-10">
+            <button className="border rounded-full lg:w-52 text-sm lg:text-base lg:h-16 min-w-[100px] h-10">
               Kids
             </button>
-            <button className="border rounded-full lg:w-52 text-base lg:h-16 min-w-20 h-10">
+            <button className="border rounded-full lg:w-52 text-sm lg:text-base lg:h-16 min-w-[100px] h-10">
               Perfumes
             </button>
-            <button className="border rounded-full lg:w-52 text-base lg:h-16 min-w-20 h-10">
+            <button className="border rounded-full lg:w-52 text-sm lg:text-base lg:h-16 min-w-[100px] h-10">
               Sport
             </button>
-            <button className="border rounded-full lg:w-52 text-base lg:h-16 min-w-20 h-10  ">
+            <button className="border rounded-full lg:w-52 text-sm lg:text-base lg:h-16 min-w-[100px] h-10">
               Jewelry
             </button>
           </div>

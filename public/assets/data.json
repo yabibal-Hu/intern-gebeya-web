@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "French Kiss Bag",
-      "img": "/src/assets/img/french_kiss_bag.png",
+      "img": "/assets/img/french_kiss_bag.png",
       "categoryId": 2,
       "categoryName": "Women",
       "unique": "ALDO",
@@ -20,7 +20,7 @@
     {
       "id": 2,
       "name": "Burberry Shine Shoes",
-      "img": "/src/assets/img/Burberry_Shine.png",
+      "img": "/assets/img/Burberry_Shine.png",
       "categoryId": 1,
       "categoryName": "Kids",
       "unique": "ALDO",
@@ -33,16 +33,16 @@
         "Available in a variety of sizes"
       ],
       "relatedImgs": [
-        "/src/assets/img/10001.png",
-        "/src/assets/img/10002.png",
-        "/src/assets/img/10003.png",
-        "/src/assets/img/Burberry_Shine.png"
+        "/assets/img/10001.png",
+        "/assets/img/10002.png",
+        "/assets/img/10003.png",
+        "/assets/img/Burberry_Shine.png"
       ]
     },
     {
       "id": 3,
       "name": "Alvero Gown",
-      "img": "/src/assets/img/Alvero_Gown.png",
+      "img": "/assets/img/Alvero_Gown.png",
       "categoryId": 3,
       "categoryName": "Women",
       "unique": "DIVINE",
@@ -61,83 +61,83 @@
     {
       "id": 1,
       "name": "Shoes",
-      "img": "/src/assets/img/shoe.png"
+      "img": "/assets/img/shoe.png"
     },
     {
       "id": 2,
       "name": "Bag",
-      "img": "/src/assets/img/bag.png"
+      "img": "/assets/img/bag.png"
     },
     {
       "id": 3,
       "name": "Jackets",
-      "img": "/src/assets/img/Jacket.webp"
+      "img": "/assets/img/Jacket.webp"
     },
     {
       "id": 4,
       "name": "Lingerie",
-      "img": "/src/assets/img/lingrae.png"
+      "img": "/assets/img/lingrae.png"
     },
     {
       "id": 5,
       "name": "Belts",
-      "img": "/src/assets/img/Belts.png"
+      "img": "/assets/img/Belts.png"
     },
     {
       "id": 6,
       "name": "Street Wear",
-      "img": "/src/assets/img/street_wear.png"
+      "img": "/assets/img/street_wear.png"
     },
     {
       "id": 7,
       "name": "Sunglasses",
-      "img": "/src/assets/img/sunglasses.webp"
+      "img": "/assets/img/sunglasses.webp"
     },
     {
       "id": 8,
       "name": "Sun Wear",
-      "img": "/src/assets/img/sun_wear.webp"
+      "img": "/assets/img/sun_wear.webp"
     },
     {
       "id": 9,
       "name": "Hats",
-      "img": "/src/assets/img/hat.png"
+      "img": "/assets/img/hat.png"
     },
     {
       "id": 10,
       "name": "Slippers",
-      "img": "/src/assets/img/slippers.png"
+      "img": "/assets/img/slippers.png"
     },
     {
       "id": 11,
       "name": "Wigs",
-      "img": "/src/assets/img/wigs.webp"
+      "img": "/assets/img/wigs.webp"
     },
     {
       "id": 12,
       "name": "Cosmetics",
-      "img": "/src/assets/img/costmetics.png"
+      "img": "/assets/img/costmetics.png"
     }
   ],
   "kinds": [{
     "id": 1,
     "name": "Casual wear",
-    "img": "/src/assets/img/casual_shirt.png",
+    "img": "/assets/img/casual_shirt.png",
     "quantity": 20}
     ,{
     "id": 2,
     "name": " Vintage",
-    "img": "/src/assets/img/vintage_dress.png",
+    "img": "/assets/img/vintage_dress.png",
     "quantity": 31}
     ,{
     "id": 3,
     "name": "Beauty products",
-    "img": "/src/assets/img/beauty_products.png",
+    "img": "/assets/img/beauty_products.png",
     "quantity": 24}
     ,{
     "id": 4,
     "name": "Gym wears",
-    "img": "/src/assets/img/gym_wears-removebg-preview.png",
+    "img": "/assets/img/gym_wears-removebg-preview.png",
     "quantity": 62}
     ]
 }

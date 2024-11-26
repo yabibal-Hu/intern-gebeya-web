@@ -1,6 +1,6 @@
-import next from "../../assets/icon/next.png";
+import next from "../../../public/assets/icon/next.png";
 import { Kind } from "../../types";
-import { kinds } from "../../assets/data.json";
+import { kinds } from "../../../public/assets/data.json";
 import { useRef, useState } from "react";
 
 export default function Category() {

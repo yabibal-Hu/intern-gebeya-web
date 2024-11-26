@@ -1,4 +1,4 @@
-import summer from '../../assets/img/summer_advert.png'
+import summer from "../../../public/assets/img/summer_advert.png";
 
 export default function Blog() {
   return (
@@ -27,9 +27,9 @@ export default function Blog() {
         <p className="lg:text-[40px] text-[18px] font-[600] text-[#9847EF] w-[290px] lg:w-full font-poppins pb-4">
           Our Curated Summer Collection
         </p>
-        <p className="text-[14px] lg:text-[24px] font-[400] text-[#9847EF] leading-[21px] lg:leading-[40px] w-[351px] lg:w-[500px] pb-8 items-center">
+        <p className="text-[14px] lg:text-[24px] font-[400] text-[#9847EF] leading-[21px] lg:leading-[40px] w-full lg:w-[500px] pb-8">
           Explore our curated summer collection featuring trending styles,
-          vibrant colors and lightweight fabrics perfect for long days and
+          vibrant colors, and lightweight fabrics perfect for long days and
           nights.
         </p>
         <button className="bg-[#FEA301] w-[332px] lg:w-[280px] sm-max-p-[10px] h-[44px] lg:h-[62px] rounded-[8px] text-white font-[500] ml-[9px] md:ml-0 text-[24px] mt-4">

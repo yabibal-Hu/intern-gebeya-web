@@ -1,8 +1,8 @@
 import React from "react";
-import close from "../assets/icon/close.png";
+import close from "../../public/assets/icon/close.png";
 import { Link } from "react-router-dom";
-import down from "../assets/icon/down.png";
-import uk from "../assets/icon/uk.png";
+import down from "../../public/assets/icon/down.png";
+import uk from "../../public/assets/icon/uk.png";
 
 interface Props {
   setIsSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>;

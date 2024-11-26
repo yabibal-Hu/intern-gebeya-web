@@ -1,15 +1,18 @@
 import { useState } from "react";
-import up from "../assets/icon/up.png";
+import up from "../../public/assets/icon/up.png";
 import { Link } from "react-router-dom";
-import down from "../assets/icon/down.png";
-import victor from "../assets/icon/Vector.png";
-import search from "../assets/icon/search.png";
-import uk from "../assets/icon/uk.png";
-import cart from "../assets/icon/bag-2.png";
-import menu from "../assets/icon/menu.png";
+import { useCart } from "../contexts/CartContext";
+import down from "../../public/assets/icon/down.png";
+import victor from "../../public/assets/icon/Vector.png";
+import search from "../../public/assets/icon/search.png";
+import search2 from "../../public/assets/icon/search-2.png";
+import uk from "../../public/assets/icon/uk.png";
+import cart from "../../public/assets/icon/bag-3.png";
+import menu from "../../public/assets/icon/menu.png";
 import SidBar from "./SidBar";
 
 export default function Header() {
+  const { cartItems } = useCart();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -169,7 +172,7 @@ export default function Header() {
                   className="absolute inset-y-0 right-0 flex items-center justify-center w-20 h-full bg-[#882BEC] rounded-r-2xl text-white hover:bg-[#6e23b3] focus:ring-2 focus:ring-blue-500 focus:outline-none"
                   onClick={() => alert("Search button clicked!")}
                 >
-                  <img className="h-5 w-5" src={search} alt="Search Icon" />
+                  <img className="h-5 w-5" src={search2} alt="Search Icon" />
                 </button>
               </div>
             </li>
@@ -180,12 +183,18 @@ export default function Header() {
               </span>
             </li>
             <li>
-              <Link to="/">
+              <Link to="/cart" className="relative">
                 <img
                   className="h-10 w-10 p-2 rounded-full bg-[#882BEC]"
                   src={cart}
                   alt=""
                 />
+                {Object.keys(cartItems).length > 0 && (
+                  
+                  <p className="absolute -top-1.5 -right-1.5 bg-[#FF0000] rounded-full w-5 h-5 flex justify-center items-center text-white">
+                  {Object.keys(cartItems).length}
+                </p>
+                )}
               </Link>
             </li>
           </ul>

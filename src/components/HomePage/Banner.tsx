@@ -1,6 +1,6 @@
-import person from "../../assets/img/person.png"
-import shoe from "../../assets/img/shoee.jpeg"
-import shirt from "../../assets/img/shirt.jpeg"
+import person from "../../../public/assets/img/person.png";
+import shoe from "../../../public/assets/img/shoee.jpeg";
+import shirt from "../../../public/assets/img/shirt.jpeg";
 
 export default function Banner() {
   return (
