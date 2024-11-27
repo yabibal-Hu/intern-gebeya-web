@@ -66,12 +66,12 @@
     {
       "id": 2,
       "name": "Bag",
-      "img": "/assets/img/bag.png"
+      "img": "/assets/img/Bag.png"
     },
     {
       "id": 3,
       "name": "Jackets",
-      "img": "/assets/img/Jacket.webp"
+      "img": "/assets/img/Jacket.png"
     },
     {
       "id": 4,
@@ -91,12 +91,12 @@
     {
       "id": 7,
       "name": "Sunglasses",
-      "img": "/assets/img/sunglasses.webp"
+      "img": "/assets/img/sunglasses.png"
     },
     {
       "id": 8,
       "name": "Sun Wear",
-      "img": "/assets/img/sun_wear.webp"
+      "img": "/assets/img/sun_wear.png"
     },
     {
       "id": 9,
@@ -111,7 +111,7 @@
     {
       "id": 11,
       "name": "Wigs",
-      "img": "/assets/img/wigs.webp"
+      "img": "/assets/img/wigs.png"
     },
     {
       "id": 12,

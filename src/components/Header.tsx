@@ -33,8 +33,8 @@ export default function Header() {
           {/* mobile */}
           <ul className="flex lg:hidden items-center gap-4 font-medium w-full justify-between">
             <li>
-              <button onClick={() => setIsSidebarOpen(true)}>
-                <img src={menu} alt="" />
+              <button onClick={() => setIsSidebarOpen(true)} className="flex align-center">
+                <img src={menu} alt="" className="w-[32px] h-[42px] " />
               </button>
             </li>
             <li>

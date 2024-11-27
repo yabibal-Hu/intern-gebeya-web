@@ -2,6 +2,7 @@ import React from "react";
 import close from "../../public/assets/icon/close.png";
 import { Link } from "react-router-dom";
 import down from "../../public/assets/icon/down.png";
+import logo from "../../public/assets/icon/logo1.png";
 import uk from "../../public/assets/icon/uk.png";
 
 interface Props {
@@ -23,12 +24,12 @@ export default function Sidebar({ setIsSidebarOpen }: Props) {
       <div className="relative w-1/2 bg-white text-sm z-50">
         <ul>
           <li className="border-b pl-5 px-5">
-            <span className="flex justify-between">
+            <span className="flex pt-3 justify-between">
               <button onClick={closeSidebar}>
                 <img src={close} alt="Close" />
               </button>
               <Link to="/">
-                <p className="font-bold text-3xl pr-10 pb-3">ገ</p>
+                <img className="mx-auto w-[32px]" src={logo} alt="" />
               </Link>
             </span>
           </li>
