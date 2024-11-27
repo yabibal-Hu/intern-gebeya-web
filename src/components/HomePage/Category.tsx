@@ -33,14 +33,14 @@ export default function Category() {
         <div className="lg:flex hidden gap-[30px]">
           <button>
             <img
-              className="rotate-90 bg-[#FEA301] w-[40px] rounded-b-full"
+              className="rotate-90 bg-[#FEA301] w-[30px] rounded-b-full"
               src={next}
               alt=""
             />
           </button>
           <button>
             <img
-              className="-rotate-90 bg-[#FEA301] w-[40px] rounded-b-full"
+              className="-rotate-90 bg-[#FEA301] w-[30px] rounded-b-full"
               src={next}
               alt=""
             />

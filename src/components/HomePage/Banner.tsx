@@ -15,7 +15,7 @@ export default function Banner() {
 
         <div className="flex gap-16 flex-col items-center">
           <img className="w-80 rounded-full" src={person} alt="" />
-          <button className="bg-[#FEA301] hover:bg-[#fe8f01] hidden lg:flex justify-center text-black text-2xl py-2 w-80 rounded-md ">
+          <button className="bg-[#FEA301] hover:bg-[#fe8f01] hidden lg:flex justify-center text-white text-2xl py-2 w-80 rounded-md ">
             Explor Now
           </button>
         </div>

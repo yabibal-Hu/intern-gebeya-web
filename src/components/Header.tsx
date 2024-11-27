@@ -193,7 +193,7 @@ export default function Header() {
             <li>
               <Link to="/cart" className="relative">
                 <img
-                  className="h-10 w-10 p-2 rounded-full bg-[#882BEC]"
+                  className="h-10 w-10 p-2 rounded-full bg-[#882BEC] hover:bg-[#6e23b3] "
                   src={cart}
                   alt=""
                 />

@@ -2,6 +2,7 @@ import data from "../../../public/../public/assets/data.json";
 import { Item } from "../../types";
 import heart from "../../../public/assets/icon/gridicons_heart-outline.png";
 import star from "../../../public/assets/icon/star1.png";
+import next from "../../../public/assets/icon/next.png";
 import {useCart} from "../../contexts/CartContext"
 import { Link } from "react-router-dom";
 import { useRef, useState } from "react";
@@ -34,7 +35,27 @@ const { addItem } = useCart();
       <div className="">
         <div>
           <section className="py-8">
-            <h2 className="text-2xl font-bold mb-6">Latest Collections</h2>
+            <div className="flex justify-between items-center lg:pb-16 pb-4 ">
+              <p className="font-[600] lg:text-4xl text-lg">
+                Latest Collections
+              </p>
+              <div className="lg:flex hidden gap-[30px]">
+                <button>
+                  <img
+                    className="rotate-90 bg-[#FEA301] w-[30px] rounded-b-full"
+                    src={next}
+                    alt=""
+                  />
+                </button>
+                <button>
+                  <img
+                    className="-rotate-90 bg-[#FEA301] w-[30px] rounded-b-full"
+                    src={next}
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
             <div className="relative">
               <div
                 ref={scrollRef}
