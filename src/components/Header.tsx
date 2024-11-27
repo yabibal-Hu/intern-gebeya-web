@@ -5,6 +5,7 @@ import { useCart } from "../contexts/CartContext";
 import down from "../../public/assets/icon/down.png";
 import victor from "../../public/assets/icon/Vector.png";
 import search from "../../public/assets/icon/search.png";
+import logo from "../../public/assets/icon/logo1.png";
 import search2 from "../../public/assets/icon/search-2.png";
 import uk from "../../public/assets/icon/uk.png";
 import cart from "../../public/assets/icon/bag-3.png";
@@ -26,7 +27,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white sticky top-0 z-50 px-2 md:px-8 lg:px-4 xl:px-16">
+    <header className="bg-white sticky top-0 z-50 px-1 md:px-8 lg:px-4 xl:px-16">
       <nav className="bg-white  px-4 lg:px-6 py-2.5 ">
         <div className="flex flex-wrap justify-between items-center ">
           {/* mobile */}
@@ -39,7 +40,7 @@ export default function Header() {
             <li>
               <Link to="/">
                 {/* align center */}
-                <p className="font-bold text-3xl pb-3">ገ</p>
+                <img className="mx-auto w-[32px]" src={logo} alt="" />
               </Link>
             </li>
             <li>
@@ -52,7 +53,7 @@ export default function Header() {
 
                 <div className="absolute inset-y-0 left-0 flex items-center pl-3">
                   <img
-                    className="h-3 w-3 text-gray-400"
+                    className="h-5 w-5 text-gray-400"
                     src={search}
                     alt="Search Icon"
                   />
@@ -61,13 +62,11 @@ export default function Header() {
             </li>
             <li className="relative">
               <Link to="/cart">
-                <img
-                  className="h-8 w-8 p-2 rounded-full bg-[#882BEC]"
-                  src={cart}
-                  alt=""
-                />
+                <span className="rounded-full w-[24px] h-[24px] flex justify-center items-center bg-[#222222]">
+                  <img className=" w-[16px] " src={cart} alt="" />
+                </span>
                 {Object.keys(cartItems).length > 0 && (
-                  <p className="absolute -top-0.5 -right-0.5 bg-[#FF0000] rounded-full w-3 h-3 flex justify-center items-center text-xs text-white">
+                  <p className="absolute -top-1 -right-1 bg-[#FF0000] rounded-full w-3 h-3 flex justify-center items-center text-xs text-white">
                     {Object.keys(cartItems).length}
                   </p>
                 )}
@@ -79,7 +78,7 @@ export default function Header() {
           <ul className="hidden lg:flex items-center w-full justify-between font-medium">
             <li>
               <Link to="/">
-                <p className="font-bold text-7xl pb-4">ገ</p>
+                <img src={logo} className="w-[32px]" alt="" />
               </Link>
             </li>
             <li>
@@ -166,7 +165,7 @@ export default function Header() {
                 <input
                   type="search"
                   placeholder="Search"
-                  className="w-full border rounded-2xl py-2 pl-10 pr-12 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  className="w-full border rounded-2xl py-2 pl-10 pr-12 focus:ring-1 focus:outline-none"
                 />
 
                 <div className="absolute inset-y-0 left-0 flex items-center pl-3">
@@ -178,8 +177,8 @@ export default function Header() {
                 </div>
 
                 <button
-                  className="absolute inset-y-0 right-0 flex items-center justify-center w-20 h-full bg-[#882BEC] rounded-r-2xl text-white hover:bg-[#6e23b3] focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                  onClick={() => alert("Search button clicked!")}
+                  className="absolute inset-y-0 right-0 flex items-center justify-center w-20 h-full bg-[#882BEC] rounded-r-2xl text-white hover:bg-[#6e23b3]  focus:outline-none"
+                  
                 >
                   <img className="h-5 w-5" src={search2} alt="Search Icon" />
                 </button>

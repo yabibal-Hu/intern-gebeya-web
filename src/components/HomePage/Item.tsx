@@ -55,7 +55,7 @@ const { addItem } = useCart();
                       <span className="absolute top-4 left-4">
                         <Link to="/">
                           <img
-                            className="bg-white rounded-full w-8 md:w-10 p-2"
+                            className="bg-white hover:bg-gray-200 rounded-full w-8 md:w-10 p-2"
                             src={heart}
                             alt="Favorite"
                           />
@@ -83,7 +83,7 @@ const { addItem } = useCart();
                         <p className="text-xl font-bold">${item.price}</p>
                         <button
                           onClick={() => addItem(item.id)}
-                          className="lg:w-[150px] lg:h-[74px ] text-white bg-[#FEA301] p-3  rounded-[16px]"
+                          className="lg:w-[150px] lg:h-[74px ] text-white hover:bg-[#fe8f01] bg-[#FEA301] p-3  rounded-[16px]"
                         >
                           Add to Cart
                         </button>

@@ -32,7 +32,7 @@ export default function Blog() {
           vibrant colors, and lightweight fabrics perfect for long days and
           nights.
         </p>
-        <button className="bg-[#FEA301] w-[332px] lg:w-[280px] sm-max-p-[10px] h-[44px] lg:h-[62px] rounded-[8px] text-white font-[500] ml-[9px] md:ml-0 text-[24px] mt-4">
+        <button className=" bg-[#FEA301] hover:bg-[#fe8f01] w-[90%] lg:w-[280px] sm-max-p-[10px] h-[44px] lg:h-[62px] rounded-[8px] text-white font-[500]  md:ml-0 text-[24px] mt-4">
           Explore now
         </button>
       </div>

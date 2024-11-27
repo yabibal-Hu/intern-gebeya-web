@@ -15,7 +15,7 @@ export default function Banner() {
 
         <div className="flex gap-16 flex-col items-center">
           <img className="w-80 rounded-full" src={person} alt="" />
-          <button className="bg-[#FEA301] hidden lg:flex justify-center text-black text-2xl py-2 w-80 rounded-md ">
+          <button className="bg-[#FEA301] hover:bg-[#fe8f01] hidden lg:flex justify-center text-black text-2xl py-2 w-80 rounded-md ">
             Explor Now
           </button>
         </div>
@@ -25,7 +25,9 @@ export default function Banner() {
             Discover a world of convenience with our user-friendly platform,
             curaated collections, and exceptional customer service
           </p>
-          <p className="font-alfa-slab lg:text-[128px] text-3xl font-[400] ">SHOP</p>
+          <p className="font-alfa-slab lg:text-[128px] text-3xl font-[400] ">
+            SHOP
+          </p>
           <img
             className="w-64 lg:flex hidden rounded-full"
             src={shirt}
@@ -38,7 +40,7 @@ export default function Banner() {
           Discover a world of convenience with our user-friendly platform,
           curaated collections, and exceptional customer service
         </p>
-        <button className="bg-[#FEA301] text-base py-2 w-80 rounded-md items-center ">
+        <button className="bg-[#FEA301] hover:bg-[#fe8f01] text-base py-2 w-80 rounded-md items-center ">
           Explor Now
         </button>
       </div>
